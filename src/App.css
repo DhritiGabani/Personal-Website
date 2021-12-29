@@ -1,0 +1,29 @@
+.about-image {
+  height: 300px;
+  /* width: 200px; */
+}
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+}
+
+.project-image {
+  height: 350px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.project {
+  padding: 1rem;
+}
+
+.icons {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  list-style: none;
+}
