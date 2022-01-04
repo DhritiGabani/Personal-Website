@@ -1,29 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Projects } from "../components/Projects";
+import Box from "@mui/material/Box";
+import Paper from "@mui/material/Paper";
+import Grid from "@mui/material/Grid";
+import Item from "@mui/material/Grid";
 
 function ProjectsPage() {
   const renderProject = ([projectId, project]) => {
     return (
-      <div id={projectId} className="project-gallery">
-        <Link to={projectId}>
-          <div id={projectId} className="project">
-            <img className="project-image" src={project.img} alt="" />
+      <Grid item md={6} sm={12} id={projectId} className="project-gallery">
+        <Item id={projectId}>
+          <div className="project">
+            <Link to={projectId}>
+              <img className="project-image" src={project.img} alt="" />
+            </Link>
             <div className="project-info">
               {project.name}
               <p>{project.subTitle}</p>
             </div>
           </div>
-        </Link>
-      </div>
+        </Item>
+      </Grid>
+      // </Box>
     );
   };
 
   return (
     <div>
-      <h3>Some of the projects I have worked on</h3>
+      <p className="project-page-title">
+        Some of the projects I have worked on
+      </p>
       {/* Iterate through my Projects and then I want to display each project */}
-      {Object.entries(Projects).map(renderProject)}
+      <Grid container>{Object.entries(Projects).map(renderProject)}</Grid>
     </div>
   );
 }

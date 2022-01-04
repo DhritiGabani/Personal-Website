@@ -1,21 +1,160 @@
-.about-image {
-  height: 300px;
-  /* width: 200px; */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
-.project-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2.5rem;
+
+.sm-link {
+  color: darkgray;
+}
+
+i {
+  transition: 0.2s color ease-out;
+}
+
+i:hover {
+  color: black;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  padding: 1.5rem;
+  margin-left: 3rem;
+  margin-top: 1rem;
+  font-size: 21px;
+  font-family: "DM Sans";
+}
+
+.nav-home-link {
+  font-size: 24 px;
+  text-decoration: none;
+}
+
+.nav-link {
+  margin-right: 3rem;
+}
+
+.text {
+  margin: 0px 64px;
+  padding: 0px;
+}
+
+.lead {
+  margin-top: 4rem;
+  font-family: "DM Sans";
+}
+
+.title {
+  margin: 64px;
+  margin-bottom: 64px;
+  font-size: 48px;
+  font-family: "DM Sans";
+}
+
+.subtitle {
+  /* margin: 16px; */
+  margin-top: 20px;
+  font-size: 36px;
+  font-family: "DM Sans";
+}
+.displays {
+  /* margin-top: 2rem; */
+  font-size: 3rem;
+  font-family: "DM Sans";
+}
+.display {
+  font-size: 1.6rem;
+  font-family: "DM Sans";
+}
+
+.type:focus {
+  border-color: "black";
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  margin-bottom: 1rem;
+  font-family: "DM Sans";
+}
+
+.more-info {
+  font-size: 20px;
+}
+
+.about-image {
+  width: 350px;
+  margin-left: 1rem;
+  border-radius: 40px;
+}
+
+span {
+  font-size: 25px;
+}
+
+.code {
+  background-color: lightgrey;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image-container {
+  width: fit-content;
+}
+
+.about-content {
+  max-width: 600px;
+  font-family: "DM Sans";
+}
+
+.project-page-title {
+  font-size: 2rem;
+  margin: 1rem 4.2rem;
+  text-align: left;
+  font-family: "DM Sans";
+}
+
+.project-display {
+  margin: 0 4.5rem;
 }
 
 .project-image {
-  height: 350px;
-  width: 100%;
-  padding: 1rem;
+  height: 17rem;
+  width: 25rem;
+  border-radius: 40px;
+}
+
+.project-image:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-info {
+  margin-top: 16px;
+  font-size: 20px;
+  text-align: center;
+  max-width: 25rem;
+  font-family: "DM Sans";
 }
 
 .project {
-  padding: 1rem;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-screenshot {
+  height: 500px;
+  border-radius: 40px;
 }
 
 .icons {
@@ -24,6 +163,64 @@
   justify-content: center;
 }
 
-.list {
-  list-style: none;
+.fa .fa-linkedin .fa-envelope .fa-github {
+  padding-right: 5px;
+}
+
+.social-media {
+  margin: 0 0.8rem;
+}
+
+.motivation-wrapper {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  font-family: "DM Sans";
+}
+p {
+  font-family: "DM Sans";
+}
+@media all and (max-width: 1050px) {
+  .project-screenshot {
+    width: 300px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media all and (max-width: 760px) {
+  .content-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-bar {
+    margin-left: 0rem;
+  }
+
+  .nav-link {
+    margin-right: 1rem;
+  }
+
+  .info-wrapper {
+    flex-direction: column;
+  }
+
+  .project-screenshot {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-page-title {
+    font-size: 1.7rem;
+    margin: 1rem 1.5rem;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .about-image {
+    margin-left: 0px;
+    width: 200px;
+  }
 }

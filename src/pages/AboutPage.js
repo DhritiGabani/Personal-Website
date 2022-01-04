@@ -5,14 +5,7 @@ import Content from "../components/Content";
 function AboutPage(props) {
   return (
     <div>
-      <div className="Image">
-        <img
-          className="about-image"
-          src={require("../imgs/headshot.JPG")}
-          alt="headshot"
-        />
-      </div>
-      <div className="about-info">
+      <div>
         <Body title={props.title}></Body>
         <Content>
           <p>
@@ -24,7 +17,7 @@ function AboutPage(props) {
           <p>
             My "avid learner" personality reflected even more in high school
             when I took part in science competitions and decided to pick all the
-            core STEM courses.{" "}
+            core STEM courses.
           </p>
           <p>
             Furthermore, at the end of 2019, I decided to teach myself to code,
@@ -50,10 +43,13 @@ function AboutPage(props) {
             my "wanting to learn new things" nature, and it enables me to create
             solutions by integrating different fields.
           </p>
-          <h4>Why I create</h4>
+          <p>
+            <span> Why I create</span>
+          </p>
           <p>To solve issues faced by me or by people around me</p>
           <p>To learn different programming languages and skills</p>
         </Content>
+        <div className="Image"></div>
       </div>
     </div>
   );

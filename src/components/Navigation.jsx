@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <Navbar>
+    <Navbar className="nav-bar">
       <Link className="nav-home-link" to="/">
         <Navbar.Brand> Dhriti Gabani </Navbar.Brand>
       </Link>

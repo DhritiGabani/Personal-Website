@@ -16,6 +16,7 @@ const AppRouter = () => {
             title={info.home.title}
             subTitle={info.home.subTitle}
             text={info.home.text}
+            typewriter={info.home.typewriter}
           />
         }
       />

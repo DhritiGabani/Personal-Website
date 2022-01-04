@@ -1,3 +1,5 @@
+import TypeWriterEffect from "react-typewriter-effect";
+
 export const info = {
   headerLinks: [
     { title: "Home", path: "/" },
@@ -7,7 +9,8 @@ export const info = {
   home: {
     title: "Hi, I'm Dhriti",
     subTitle:
-      "I'm a Biomedical Engineering student at the University of Waterloo",
+      "I'm a Biomedical Engineering student at the University of Waterloo.",
+    typewriter: true,
     text: "press cmd k/ ctrl k to learn more about me",
   },
   projects: {
