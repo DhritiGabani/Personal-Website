@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.9356ae2e.css",
-    "main.js": "/static/js/main.45f74839.js",
-    "static/media/headshot.JPG": "/static/media/headshot.1d119a1d7ac4c611df87.JPG",
-    "static/media/diagnose.png": "/static/media/diagnose.a04abe1f48ff66ba9f3a.png",
-    "static/media/extension.png": "/static/media/extension.75a76d70ace2cb90fbf5.png",
-    "static/media/bot.png": "/static/media/bot.eae1ceb7a842d4d2453f.png",
-    "index.html": "/index.html",
-    "main.9356ae2e.css.map": "/static/css/main.9356ae2e.css.map",
-    "main.45f74839.js.map": "/static/js/main.45f74839.js.map"
+    "main.css": "/personal-website/static/css/main.9356ae2e.css",
+    "main.js": "/personal-website/static/js/main.7135445c.js",
+    "static/media/headshot.JPG": "/personal-website/static/media/headshot.1d119a1d7ac4c611df87.JPG",
+    "static/media/diagnose.png": "/personal-website/static/media/diagnose.a04abe1f48ff66ba9f3a.png",
+    "static/media/extension.png": "/personal-website/static/media/extension.75a76d70ace2cb90fbf5.png",
+    "static/media/bot.png": "/personal-website/static/media/bot.eae1ceb7a842d4d2453f.png",
+    "index.html": "/personal-website/index.html",
+    "main.9356ae2e.css.map": "/personal-website/static/css/main.9356ae2e.css.map",
+    "main.7135445c.js.map": "/personal-website/static/js/main.7135445c.js.map"
   },
   "entrypoints": [
     "static/css/main.9356ae2e.css",
-    "static/js/main.45f74839.js"
+    "static/js/main.7135445c.js"
   ]
 }
