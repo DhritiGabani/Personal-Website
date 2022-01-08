@@ -16,6 +16,21 @@ i:hover {
   color: black;
 }
 
+.result-style {
+  padding: 0.7rem;
+  background: transparent;
+  border-left: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.result-style:hover {
+  background: rgba(0 0 0 / 0.05);
+  border-left: 2px solid rgb(28, 29, 29);
+}
+
 .wrapper {
   height: 100vh;
   display: flex;

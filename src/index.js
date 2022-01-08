@@ -10,7 +10,35 @@ import {
   KBarResults,
   useMatches,
 } from "kbar";
+import { FaHome } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.css";
+
+const searchStyle = {
+  padding: "12px 16px",
+  fontSize: "16px",
+  width: "100%",
+  boxSizing: "border-box",
+  outline: "none",
+  border: "none",
+  background: "rgb(252 252 252)",
+  color: "rgb(28 28 29)",
+};
+
+const animatorStyle = {
+  maxWidth: "600px",
+  width: "100%",
+  background: "rgb(252 252 252)",
+  color: "rgb(28 28 29)",
+  borderRadius: "8px",
+  overflow: "hidden",
+  boxShadow: "0px 6px 20px rgb(0 0 0 / 20%)",
+};
+const groupNameStyle = {
+  padding: "8px 16px",
+  fontSize: "10px",
+  textTransform: "uppercase",
+  opacity: 0.5,
+};
 
 const actions = [
   {
@@ -18,6 +46,13 @@ const actions = [
     name: "Home",
     shortcut: ["h"],
     keywords: "home",
+    subtitle: "go to home",
+    section: "NAVIGATION",
+    icon: (
+      <i className="fa-home social-media">
+        <FaHome />
+      </i>
+    ),
     perform: () => (window.location.pathname = "/"),
   },
   {
@@ -40,8 +75,8 @@ ReactDOM.render(
   <KBarProvider actions={actions}>
     <KBarPortal>
       <KBarPositioner>
-        <KBarAnimator>
-          <KBarSearch />
+        <KBarAnimator style={animatorStyle}>
+          <KBarSearch style={searchStyle} />
           <RenderResults />
         </KBarAnimator>
       </KBarPositioner>
@@ -56,24 +91,30 @@ function RenderResults() {
 
   return (
     <KBarResults
-      className="type"
       items={results}
       onRender={({ item, active }) =>
         typeof item === "string" ? (
-          <div
-            className="length"
-            style={{ "box-shadow": "0 5px 15px rgba(0, 0, 0, 0.3)" }}
-          >
+          <div className="length" style={groupNameStyle}>
             {item}
           </div>
         ) : (
-          <div
-            style={{
-              background: active ? "#eee" : "white",
-              padding: "1.2rem",
-            }}
-          >
-            {item.name}
+          <div className="result-style">
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              {item.icon && item.icon}
+              <div style={{ marginLeft: "0.5rem" }}>
+                <div>{item.name}</div>
+                <div>{item.subtitle}</div>
+              </div>
+            </div>
+            <div>
+              <kbd>{item.shortcut}</kbd>
+            </div>
           </div>
         )
       }

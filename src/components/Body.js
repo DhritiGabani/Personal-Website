@@ -23,7 +23,7 @@ function Body(props) {
                     fontSize: "2rem",
                     "font-family": "DM Sans",
                   }}
-                  startDelay={1500}
+                  startDelay={700}
                   cursorColor="black"
                   multiText={[
                     "a builder",
@@ -31,6 +31,7 @@ function Body(props) {
                     "a developer",
                     "an avid learner",
                   ]}
+                  loop={true}
                   multiTextDelay={1700}
                   typeSpeed={40}
                 />
