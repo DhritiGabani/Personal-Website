@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Projects } from "../components/Projects";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import Item from "@mui/material/Grid";
 
@@ -27,7 +25,7 @@ function ProjectsPage() {
   };
 
   return (
-    <div>
+    <div style={{ backgroundColor: "black" }}>
       <p className="project-page-title">
         Some of the projects I have worked on
       </p>

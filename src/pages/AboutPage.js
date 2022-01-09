@@ -4,15 +4,16 @@ import Content from "../components/Content";
 
 function AboutPage(props) {
   return (
-    <div>
+    <div style={{ backgroundColor: "black" }}>
       <div>
         <Body title={props.title}></Body>
         <Content>
           <p>
-            Growing up, I have involved myself with learning new skills and
-            participating in numerous activities. Whether it was learning a new
-            sport, language or creating DIY arts & craft projects, I found
-            myself spending countless hours on it.
+            Growing up, I have involved myself with{" "}
+            <span style={{ color: "#b1c8ff" }}>learning new skills </span>and
+            participating in various extracurricular activities. Whether it was
+            learning a new sport, language or creating DIY arts & craft
+            projects, I found myself spending countless hours on it.
           </p>
           <p>
             My "avid learner" personality reflected even more in high school
@@ -20,10 +21,11 @@ function AboutPage(props) {
             core STEM courses.
           </p>
           <p>
-            Furthermore, at the end of 2019, I decided to teach myself to code,
-            and hence my coding journey began. As someone who loves to create
-            new things, programming piqued my interest, and I found it to be the
-            perfect skill to add to my toolbox.
+            Furthermore, at the end of{" "}
+            <span style={{ color: "#b1c8ff" }}>2019</span> , I decided to teach
+            myself to code, and hence my coding journey began. As someone who
+            loves to create new things, programming piqued my interest, and I
+            found it to be the perfect skill to add to my toolbox.
           </p>
           <p>
             So far, my coding journey has had its ups and downs from not wanting
@@ -39,15 +41,25 @@ function AboutPage(props) {
             first "big" coding project - project ether.
           </p>
           <p>
-            Additionally, I chose Biomedical Engineering because it aligns with
-            my "wanting to learn new things" nature, and it enables me to create
-            solutions by integrating different fields.
+            Additionally, I chose{" "}
+            <span style={{ color: "#b1c8ff" }}> Biomedical Engineering </span>
+            because it aligns with my "wanting to learn new things" nature, and
+            it enables me to create solutions by integrating different fields.
           </p>
           <p>
-            <span> Why I create</span>
+            <span style={{ "font-size": "25px", fontWeight: "500" }}>
+              {" "}
+              Why I create
+            </span>
           </p>
-          <p>To solve issues faced by me or by people around me</p>
-          <p>To learn different programming languages and skills</p>
+          <p>
+            To <span style={{ color: "#b1c8ff" }}>oslve </span> issues faced by
+            me or by people around me
+          </p>
+          <p>
+            To <span style={{ color: "#b1c8ff" }}>learn </span>different
+            programming languages and skills
+          </p>
         </Content>
         <div className="Image"></div>
       </div>

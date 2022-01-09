@@ -1,7 +1,6 @@
 import React from "react";
 import { Projects } from "../components/Projects";
 import { useParams } from "react-router-dom";
-import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
@@ -9,41 +8,69 @@ function ProjectInfo() {
   const projectId = useParams().projectId;
   const project = Projects[projectId];
   return (
-    <div className="project-display">
-      <p className="subtitle">{project.name}</p>
-      <div style={{ display: "flex", "padding-bottom": "10px" }}>
-        {/* <Container fluid={true}> */}
-        <p>{project.description}</p>
-      </div>
-      <div>
-        <Row className="justify-content-center info-wrapper">
-          <Col>
+    <div style={{ backgroundColor: "black" }}>
+      <div className="project-display">
+        <p className="subtitle">{project.name}</p>
+        <div style={{ display: "flex", "padding-bottom": "10px" }}>
+          {/* <Container fluid={true}> */}
+          <p>
+            <span style={{ "font-size": "18px" }}>{project.description}</span>
+          </p>
+        </div>
+        <div>
+          <Row className="justify-content-center info-wrapper">
+            <Col>
+              <img
+                style={{ padding: 0 }}
+                className="project-screenshot"
+                src={project.screenshotMain}
+                alt=""
+              />
+            </Col>
+            <Col className="motivation-wrapper">
+              <div
+                style={{
+                  align: "left",
+                  "font-size": "23px",
+                  "font-weight": "500",
+                }}
+              >
+                Motivation
+              </div>
+              <p style={{ align: "center", "font-size": "18px" }}>
+                {project.motivation}
+              </p>
+            </Col>
+          </Row>
+        </div>
+        <div>
+          <Row>
+            <p
+              style={{
+                "margin-top": "20px",
+                "font-size": "20px",
+                "font-weight": "500",
+              }}
+            >
+              Tools used:{" "}
+              <span style={{ "font-size": "13px" }}>
+                {project.tools.map((item) => (
+                  <kbd className="language" style={{ marginRight: "0.5rem" }}>
+                    {item}
+                  </kbd>
+                ))}
+              </span>
+            </p>
+          </Row>
+          <Row>
             <img
-              style={{ padding: 0 }}
-              className="project-screenshot"
-              src={project.screenshot}
+              className="project-screenshot-sec"
+              src={project.screenshotSecondary}
               alt=""
             />
-          </Col>
-          <Col className="motivation-wrapper">
-            <div style={{ align: "left", "font-size": "23px" }}>Motivation</div>
-            <p style={{ align: "center" }}>{project.motivation}</p>
-          </Col>
-        </Row>
-      </div>
-      <div>
-        <Row>
-          <p style={{ "padding-top": "10px", "font-size": "18px" }}>
-            Tools used:{" "}
-            <span style={{ "font-size": "13px" }}>
-              <kbd className="code">{project.tools}</kbd>
-            </span>
-          </p>
-        </Row>
-        <Row>
-          <img className="project-screenshot" src={project.screenshot} alt="" />
-        </Row>
-        {/* </Container> */}
+          </Row>
+          {/* </Container> */}
+        </div>
       </div>
     </div>
   );

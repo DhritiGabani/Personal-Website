@@ -14,7 +14,11 @@ class App extends React.Component {
     return (
       <>
         <BrowserRouter>
-          <Container className="p-0 wrapper" fluid={true}>
+          <Container
+            className="p-0 wrapper"
+            fluid={true}
+            style={{ backgroundColor: "black", color: "white" }}
+          >
             <Navigation />
             <AppRouter />
             <Footer />

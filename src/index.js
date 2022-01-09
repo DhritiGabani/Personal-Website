@@ -11,6 +11,12 @@ import {
   useMatches,
 } from "kbar";
 import { FaHome } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+
 import "bootstrap/dist/css/bootstrap.css";
 
 const searchStyle = {
@@ -59,14 +65,71 @@ const actions = [
     id: "projects",
     name: "Projects",
     shortcut: ["p"],
+    section: "NAVIGATION",
     keywords: "project",
+    subtitle: "take a look at my projects",
+    icon: (
+      <i className="fa-laptop-code social-media">
+        <FaLaptopCode />
+      </i>
+    ),
     perform: () => (window.location.pathname = "projects"),
   },
   {
     id: "about",
     name: "About",
     shortcut: ["a"],
+    section: "NAVIGATION",
     keywords: "about",
+    subtitle: "find out more about me",
+    icon: (
+      <i className="fa-user social-media">
+        <FaUser />
+      </i>
+    ),
+    perform: () => (window.location.pathname = "about"),
+  },
+  {
+    id: "email",
+    name: "Email",
+    shortcut: ["m"],
+    section: "CONTACT",
+    keywords: "mail",
+    subtitle: "dhritigabani@gmail.com",
+    icon: (
+      <i className="fa-envelope social-media">
+        <FaEnvelope />
+      </i>
+    ),
+    perform: () => (window.location.pathname = "about"),
+  },
+
+  {
+    id: "github",
+    name: "Github",
+    shortcut: ["g"],
+    section: "CONTACT",
+    keywords: "github",
+    subtitle: "DhritiGabani",
+    icon: (
+      <i className="fa-github social-media">
+        <FaGithub />
+      </i>
+    ),
+    perform: () => (window.location.pathname = "about"),
+  },
+  {
+    id: "linkedin",
+    name: "Linkedin",
+    shortcut: ["l"],
+    section: "CONTACT",
+    keywords: "linkedin",
+    subtitle: "dhritigabani",
+    icon: (
+      <i className="fa-linkedin social-media">
+        <FaLinkedin />
+      </i>
+    ),
     perform: () => (window.location.pathname = "about"),
   },
 ];
@@ -113,7 +176,7 @@ function RenderResults() {
               </div>
             </div>
             <div>
-              <kbd>{item.shortcut}</kbd>
+              <kbd className="code">{item.shortcut}</kbd>
             </div>
           </div>
         )
