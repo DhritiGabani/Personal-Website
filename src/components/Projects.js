@@ -3,10 +3,13 @@ import extension from "../imgs/extension.png";
 import bot from "../imgs/bot.png";
 import etherhome from "../imgs/homepage.png";
 import ether from "../imgs/Frame 1.png";
+import homesafe from "../imgs/Frame 2.png";
 import chrome from "../imgs/Frame 3.png";
 import site from "../imgs/Site.png";
 import discord from "../imgs/Frame 4.png";
 import ambient from "../imgs/ambient.png";
+import signin from "../imgs/signin.png";
+import track from "../imgs/track.png";
 
 export const Projects = {
   ether: {
@@ -76,12 +79,10 @@ export const Projects = {
         safely.
       </div>
     ),
-    img:
-      "https://professionals.tarkett.com/media/img/M/THH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg",
-    // path: "gethomesafe",
+    img: track, // path: "gethomesafe",
     description: "a real-time location sharing app",
-    screenshotMain: etherhome,
-    screenshotSecondary: chrome,
+    screenshotMain: signin,
+    screenshotSecondary: homesafe,
     tools: ["React js", "React native"],
     motivation: (
       <div>
@@ -136,7 +137,7 @@ export const Projects = {
     motivation: (
       <div>
         As students who spend countless hours daily on the internet for the
-        purposes of studying and working, my and team and I decided to create a
+        purposes of studying and working, my team and I decided to create a
         simple yet effective chrome extension for our{" "}
         <span style={{ color: "#b1c8ff" }}>first hackathon - Technova. </span>
         The main aim of our project was to help students increase their focus

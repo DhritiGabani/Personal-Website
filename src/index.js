@@ -10,6 +10,8 @@ import {
   KBarResults,
   useMatches,
 } from "kbar";
+import { BrowserRouter } from "react-router-dom";
+
 import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa";
@@ -135,17 +137,22 @@ const actions = [
 ];
 
 ReactDOM.render(
-  <KBarProvider actions={actions}>
-    <KBarPortal>
-      <KBarPositioner>
-        <KBarAnimator style={animatorStyle}>
-          <KBarSearch style={searchStyle} />
-          <RenderResults />
-        </KBarAnimator>
-      </KBarPositioner>
-    </KBarPortal>
-    <App />
-  </KBarProvider>,
+  <React.StrictMode>
+    <BrowserRouter>
+      <KBarProvider actions={actions}>
+        <KBarPortal>
+          <KBarPositioner>
+            <KBarAnimator style={animatorStyle}>
+              <KBarSearch style={searchStyle} />
+              <RenderResults />
+            </KBarAnimator>
+          </KBarPositioner>
+        </KBarPortal>
+        <App />
+      </KBarProvider>
+    </BrowserRouter>
+  </React.StrictMode>,
+
   document.getElementById("root")
 );
 
