@@ -10,7 +10,7 @@ import {
   KBarResults,
   useMatches,
 } from "kbar";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
@@ -138,7 +138,7 @@ const actions = [
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <KBarProvider actions={actions}>
         <KBarPortal>
           <KBarPositioner>
@@ -150,7 +150,7 @@ ReactDOM.render(
         </KBarPortal>
         <App />
       </KBarProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
 
   document.getElementById("root")
