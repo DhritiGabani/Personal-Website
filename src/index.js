@@ -138,19 +138,19 @@ const actions = [
 
 ReactDOM.render(
   <React.StrictMode>
-    <HashRouter>
-      <KBarProvider actions={actions}>
-        <KBarPortal>
-          <KBarPositioner>
-            <KBarAnimator style={animatorStyle}>
-              <KBarSearch style={searchStyle} />
-              <RenderResults />
-            </KBarAnimator>
-          </KBarPositioner>
-        </KBarPortal>
-        <App />
-      </KBarProvider>
-    </HashRouter>
+    <KBarProvider actions={actions}>
+      <KBarPortal>
+        <KBarPositioner>
+          <KBarAnimator style={animatorStyle}>
+            <KBarSearch style={searchStyle} />
+            <RenderResults />
+          </KBarAnimator>
+        </KBarPositioner>
+      </KBarPortal>
+      {/* <HashRouter> */}
+      <App />
+      {/* </HashRouter> */}
+    </KBarProvider>
   </React.StrictMode>,
 
   document.getElementById("root")
