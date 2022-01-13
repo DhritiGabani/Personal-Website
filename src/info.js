@@ -41,7 +41,7 @@ export const info = {
           to code ever again when my code had errors to "I love coding" when my
           code worked. But being able to create tools like{" "}
           <span>
-            diagnose me, Get home safe, extend your horizons,
+            Diagnose me, Get home safe, Extend your horizons,
           </span> and <span>Ambient </span> with the code I write has made me
           enjoy every part of learning to code.
           <br />
