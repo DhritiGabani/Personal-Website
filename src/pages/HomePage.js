@@ -1,17 +1,20 @@
 import React from "react";
 import Body from "../components/Body";
+import KBarCommand from "../components/KBarCommand";
 
 function HomePage(props) {
   return (
-    <div style={{ backgroundColor: "black" }}>
-      <Body
-        title={props.title}
-        subTitle={props.subTitle}
-        text={props.text}
-        name={props.name}
-        typewriter={props.typewriter}
-      />
-    </div>
+    <KBarCommand>
+      <div className="home-wrapper">
+        <Body
+          title={props.title}
+          name={props.name}
+          subTitle={props.subTitle}
+          typewriter={props.typewriter}
+          text={props.text}
+        />
+      </div>
+    </KBarCommand>
   );
 }
 export default HomePage;

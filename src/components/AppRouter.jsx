@@ -25,7 +25,12 @@ const AppRouter = () => {
         element={<ProjectsPage title={info.projects.title} />}
       />
       <Route path="projects/:projectId" element={<ProjectInfo />} />
-      <Route path="about" element={<AboutPage title={info.about.title} />} />
+      <Route
+        path="about"
+        element={
+          <AboutPage title={info.about.title} content={info.about.content} />
+        }
+      />
     </Routes>
   );
 };
