@@ -16,14 +16,14 @@ export const projects = {
     name: "Diagnose me",
     subTitle: (
       <div className="ith-subtitle">
-        A <span> web-application </span> to diagnose critical diseases using
-        machine learning principles.
+        A <span> web-app </span> to diagnose critical diseases using machine
+        learning principles.
       </div>
     ),
     img: diagnose,
     // path: "ether",
     description:
-      "Predicts respiratory disorders, heart diseases, and parkinson's disease with just an image, audio, or text inputs from users.",
+      "predicts respiratory disorders, heart diseases, and parkinson's disease with just an image, audio, or text input from users.",
     screenshotMain: etherhome,
     screenshotSecondary: ether,
     link: "https://github.com/DhritiGabani/Diagnose-me",
@@ -66,17 +66,17 @@ export const projects = {
       </div>
     ),
     img: track,
-    description: "a real-time location sharing app",
+    description: "a real-time location sharing mobile and web-app",
     screenshotMain: signin,
     screenshotSecondary: homesafe,
     link: "https://github.com/binalpreetkalra/get-home-safe",
     tools: ["React js", "React native"],
     motivation: (
       <div className="motivation">
-        During the first semester of university, I found myself and my friends
-        being hesitant to walk back alone to our dorms in the dark. After trying
-        out multiple location services, I noticed that all of them had one
-        limitation - I could not
+        During the first semester of university, my friends and I felt unsafe to
+        walk back alone to our dorms in the dark. After trying out multiple
+        location services, I noticed that all of them had one limitation - I
+        could not
         <span> track the entire trail of the route </span>taken by the user
         during their journey. I pitched my idea to fulfill this limitation to my
         friends and we decided to bring it to life by developing a mobile and
@@ -100,7 +100,7 @@ export const projects = {
     subTitle: (
       <div className="ith-subtitle">
         A multi-functional <span>chrome extension </span>
-        for productivity and mental health.
+        for productivity and mental wellness.
       </div>
     ),
     img: extension,
@@ -148,11 +148,14 @@ export const projects = {
         motivated was to have online study sessions.
         <br />
         <br />
-        During our studying sessions we like to listen to study music because it
-        helps us to <span>focus better</span>. Since we were unable to use most
-        of the discord bots on our <span>study server</span>, I decided to
-        create an music bot so we can{" "}
-        <span>listen to our favourite playists while studying.</span>
+        Listening to music during our studying sessions helped us to{" "}
+        <span>focus better</span>. Since we were unable to use most of the
+        discord bots on our <span>study server</span>, I create an music bot to
+        help my friends and I{" "}
+        <span>
+          listen to our favourite instrumental,classical, and lo-fi playists
+          while studying.
+        </span>
       </div>
     ),
   },
