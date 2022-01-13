@@ -469,7 +469,7 @@ body::-webkit-scrollbar {
     align-items: center;
   }
   .about-h1 {
-    margin-left: 0.3rem;
+    margin-left: 0.5rem;
   }
 
   .about-content {
@@ -489,6 +489,9 @@ body::-webkit-scrollbar {
 
   .project-tools {
     font-size: 0.9rem;
+  }
+  .list-item {
+    margin-bottom: 1rem;
   }
 }
 
@@ -525,6 +528,6 @@ body::-webkit-scrollbar {
     padding: 0.3rem;
   }
   .list-item {
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 }
