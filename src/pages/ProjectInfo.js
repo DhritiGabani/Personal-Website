@@ -11,8 +11,13 @@ function ProjectInfo() {
     <KBarCommand>
       <Body
         title={
-          <a href={project.link} className="project-link">
-            {project.name}{" "}
+          <a
+            href={project.link}
+            className="project-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {project.name}
           </a>
         }
       />

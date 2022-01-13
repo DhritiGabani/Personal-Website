@@ -23,7 +23,7 @@ function Body(props) {
       {props.subTitle && <div className="display">{props.subTitle}</div>}
       {props.text && (
         <div className="header-hint">
-          press &nbsp;<kbd className="code">cmd </kbd>&nbsp;+ &nbsp;
+          press &nbsp;<kbd className="code">cmd</kbd>&nbsp;+ &nbsp;
           <kbd className="code">k</kbd>
           &nbsp;&nbsp;/ &nbsp;
           <kbd className="code">ctrl</kbd> &nbsp;+ &nbsp;
