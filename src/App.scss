@@ -468,6 +468,9 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
   }
+  .about-h1 {
+    margin-left: 0.3rem;
+  }
 
   .about-content {
     width: 100%;
@@ -520,5 +523,8 @@ body::-webkit-scrollbar {
   .project-tools kbd {
     font-size: 0.8rem;
     padding: 0.3rem;
+  }
+  .list-item {
+    padding-bottom: 1rem;
   }
 }

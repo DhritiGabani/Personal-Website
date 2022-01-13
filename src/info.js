@@ -53,7 +53,7 @@ export const info = {
         <li>
           To <span>solve </span> issues faced by me or people around me
         </li>
-        <li>
+        <li className="list-item">
           To <span>learn </span>different programming languages and skills
         </li>
       </div>
