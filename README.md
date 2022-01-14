@@ -5,6 +5,10 @@
 </center>
 
 A display of my curated passion projects
+## Link to the website
+
+https://dhritigabani.github.io
+
 ## Technologies Used
 
 - React JS
