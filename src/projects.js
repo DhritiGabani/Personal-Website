@@ -96,7 +96,7 @@ export const projects = {
   },
 
   horizons: {
-    name: "Extend Your Horizons",
+    name: "Extend your horizons",
     subTitle: (
       <div className="ith-subtitle">
         A multi-functional <span>chrome extension </span>
