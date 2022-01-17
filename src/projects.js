@@ -150,7 +150,7 @@ export const projects = {
         <br />
         Listening to music during our studying sessions helped us to{" "}
         <span>focus better</span>. Since we were unable to use most of the
-        discord bots on our <span>study server</span>, I create an music bot to
+        discord bots on our <span>study server</span>, I created a music bot to
         help my friends and I listen to our favourite instrumental, classical,
         and lo-fi playists while studying.
       </div>
