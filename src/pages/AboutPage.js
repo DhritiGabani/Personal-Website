@@ -1,6 +1,6 @@
 import React from "react";
 import Body from "../components/Body";
-import headshot from "./../imgs/headshot.jpg";
+import headshot from "./../imgs/headshot.png";
 import KBarCommand from "../components/KBarCommand";
 
 function AboutPage(props) {
