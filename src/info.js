@@ -12,6 +12,8 @@ export const info = {
         I'm a <strong>Biomedical Engineering </strong>
         student at the&nbsp;
         <b>University of Waterloo</b>
+        <br />
+        Prev Software Engineering Intern @Rundoo 
       </div>
     ),
     typewriter: true,
@@ -43,7 +45,7 @@ export const info = {
           <span>
             Diagnose me, Get home safe, Extend your horizons,
           </span> and <span>Ambient </span> with the code I write has made me
-          enjoy every part of learning to code.
+          enjoy every part of learning to code. I worked as an Software Engineering Intern @Rundoo for my first co-op term in the summer 2022 and during my time there, I realised that software was something I wanted to explore more.
           <br />
           <br />
         </p>
