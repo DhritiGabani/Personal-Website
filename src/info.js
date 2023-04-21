@@ -13,7 +13,7 @@ export const info = {
         student at the&nbsp;
         <b>University of Waterloo</b>
         <br />
-        <span style={{ fontSize: "1.2rem" }}> Prev Software Engineering Intern @Rundoo </span>
+        <span style={{ fontSize: "1.2rem" }}> Prev <span style={{ color:"#b1c8ff"}}>Software Engineering Intern </span> @League @Rundoo </span>
       </div>
     ),
     typewriter: true,
@@ -29,12 +29,12 @@ export const info = {
         <p>
           Growing up, I have involved myself with{" "}
           <span>learning new skills </span>. Whether it was learning a new
-          sport, language or creating DIY arts & craft projects, I found myself
+          sport, a new language or creating DIY arts & craft projects, I found myself
           spending countless hours on it.
           <br />
           <br />
-          My coding journey began with self learning programming at the end of{" "}
-          <span>2019</span>. As someone who loves to create new things,
+          My tech journey began by teaching myself to code in high school.{" "}
+          As someone who loves to <span>create new things</span>,
           programming piqued my interest, and I found it to be the perfect skill
           to add to my toolbox.
           <br />
@@ -44,8 +44,9 @@ export const info = {
           code worked. But being able to create tools like{" "}
           <span>
             Diagnose me, Get home safe, Extend your horizons,
-          </span> and <span>Ambient </span> with the code I write has made me
-          enjoy every part of learning to code. I worked as an Software Engineering Intern @Rundoo for my first co-op term in the summer 2022 and during my time there, I realised that software was something I wanted to explore more.
+          </span> and <span>Ambient </span> with the code I write and the impact I was able to make with it has made me
+          enjoy every part of my learning journey. Through internships and side projects, I have explored different areas 
+          of software engineering like <span>frontend, backend, machine learning, data, and security.</span> I plan on continuing to explore more fields within software engineering through my future co-ops.
           <br />
           <br />
         </p>
@@ -53,10 +54,10 @@ export const info = {
           <div className="content-section">Why I create</div>
         </p>
         <li>
-          To <span>solve </span> issues faced by me or people around me
+          To <span>solve </span> issues faced by me or communities around me
         </li>
         <li className="list-item">
-          To <span>learn </span>different programming languages and skills
+          To <span>learn </span>different programming languages and skills 
         </li>
       </div>
     ),
