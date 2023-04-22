@@ -46,7 +46,7 @@ export const info = {
             Diagnose me, Get home safe, Extend your horizons,
           </span> and <span>Ambient </span> with the code I write and the impact I was able to make with it has made me
           enjoy every part of my learning journey. Through internships and side projects, I have explored different areas 
-          of software engineering like <span>frontend, backend, machine learning, data, and security.</span> I plan on continuing to explore more fields within software engineering through my future co-ops.
+          of software engineering like <span>frontend, backend, machine learning, data, infra, cloud, and security.</span> I plan on continuing to explore more fields within software engineering through my future co-ops.
           <br />
           <br />
         </p>
