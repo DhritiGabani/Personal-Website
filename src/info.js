@@ -13,7 +13,7 @@ export const info = {
         student at the&nbsp;
         <b>University of Waterloo</b>
         <br />
-        <span style={{ fontSize: "1.2rem" }}> Prev <span style={{ color:"#b1c8ff"}}>Software Engineering Intern </span> @League @Rundoo </span>
+        <span style={{ fontSize: "1.2rem" }}> Prev <span style={{ color:"#b1c8ff"}}>Software Engineering Intern </span> @PointClickCare @League @Rundoo </span>
       </div>
     ),
     typewriter: true,
